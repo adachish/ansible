@@ -26,6 +26,4 @@ phases:
       - echo "Build finished `date`"
 artifacts:
   files:
-    - servercode_revision
-    - masterdata_revision
     - dummy
