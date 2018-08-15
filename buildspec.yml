@@ -14,8 +14,7 @@ phases:
       - apt-get install -y ansible
       - echo 'Validate packer json'
       - ./packer validate packer_ec2.json
-      - touch servercode_revision
-      - touch masterdata_revision
+      - touch dummy
   build:
     commands:
       - aws configure set region $AWS_REGION
@@ -29,3 +28,4 @@ artifacts:
   files:
     - servercode_revision
     - masterdata_revision
+    
