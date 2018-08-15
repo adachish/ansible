@@ -28,4 +28,4 @@ artifacts:
   files:
     - servercode_revision
     - masterdata_revision
-    
+    - dummy
