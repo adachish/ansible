@@ -20,6 +20,7 @@ phases:
       - echo "$ansible_vault_pass" > vault_password_file
       - echo 'Build AMI'
       - ./packer build packer_ec2.json
+      
   post_build:
     commands:
       - echo "Build finished `date`"
